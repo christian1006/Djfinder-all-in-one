@@ -3,7 +3,7 @@ var express = require("express");
 var app = express();
 var path = require('path');
 var bodyParser= require('body-parser')
-
+var port = require('./config').port;
 
 
 app.use(bodyParser.urlencoded({extended: true}))
@@ -23,6 +23,6 @@ let djservice = require("./djservice");
 app.use("/api", djservice);
 
 
-app.listen(3001, function() {
-    console.log("listening in port 3001")
+app.listen(port, function() {
+    console.log("listening in " + port)
 })

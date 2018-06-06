@@ -2,9 +2,10 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import Axios from 'axios'
 import router from './router'
+var port = require('../config').port;
 
 let api_connection = Axios.create({
-    baseURL: "http://localhost:3001/api"
+    baseURL: "http://localhost:" + port + "/api"
 })
 
 Vue.use(Vuex)
