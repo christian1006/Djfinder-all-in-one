@@ -7,8 +7,13 @@
         <router-link to="/"><img src="./assets/logow3.png" style="height:23px"></router-link>
       </a>
      <form class="form-inline my-2 my-lg-0 ml-auto">
-        <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">About</button>
-        <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Contacts</button>
+      <a>
+        <router-link class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" to="/login">Log In</router-link>
+      </a>
+
+      <a>
+        <router-link class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" to="/login">Sign Up</router-link>
+      </a>
     </form>
       
   </nav>
